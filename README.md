@@ -4,8 +4,8 @@
 - **Location:** Krishnagiri, Tamilnadu, 635001
 - **Phone:** +91 807 242 8026
 - **Email:** syedaabid1995@gmail.com
-- **GitHub:** [GitHub Profile](https://github.com/YourGitHubUsername)
-- **Azure DevOps:** [Azure DevOps Profile](https://dev.azure.com/YourAzureDevOpsUsername)
+- **GitHub:** [GitHub Profile](https://github.com/syedaabid1995)
+
 
 ### Summary
 Passionate and highly effective Senior Software Engineer with a focus on Android development. Holds 3.5 years of expertise in Native Android Development, 2.5 years in Flutter Development, and 1 year in React Native. Skilled in a variety of languages and frameworks including Dart, Java, Swift, React, and more. Demonstrates a strong ability to lead and collaborate across teams for successful project delivery.
