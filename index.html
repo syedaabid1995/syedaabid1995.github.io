@@ -81,7 +81,7 @@
             <div class="contact-info">
               <p class="contact-title">Email</p>
 
-              <a href="mailto:mailto.developerkid@gmail.com" class="contact-link">syedaabid1995@gmail.com</a>
+              <a href="mailto:syedaabid1995@gmail.com" class="contact-link">syedaabid1995@gmail.com</a>
             </div>
 
           </li>
@@ -482,7 +482,7 @@
           <div class="contact-info">
             <p class="contact-title">Email</p>
 
-            <a href="mailto:mailto.developerkid@gmail.com" class="contact-link">mailto.developerkid@gmail.com</a>
+            <a href="mailto:syedaabid1995@gmail.com" class="contact-link">syedaabid1995@gmail.com</a>
           </div>
 
         </li>
