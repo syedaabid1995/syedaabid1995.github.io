@@ -20,6 +20,7 @@
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
           
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
 
   <!--
     - google font link
@@ -52,7 +53,7 @@
         <div class="info-content">
           <h1 class="name" title="Syed Aabid Ahamed">Syed Aabid Ahamed</h1>
 
-          <p class="title">Native / Hybrid App Developer</p>
+          <p class="title">Mobile & Full-Stack Engineer</p>
        <!-- </br>
           <p class="title">Kolin | Java | Flutter</p>-->
         </div>
@@ -473,8 +474,29 @@
       <!--
         - #RESUME
       -->
+<article class="resume" data-page="resume">
+ <button 
+    onclick="downloadPDF()"
+    style="display: flex; justify-content: flex-end; margin-top: 50px; position: relative;"
+    onmouseover="document.getElementById('tooltip').style.display = 'block'"
+    onmouseout="document.getElementById('tooltip').style.display = 'none'"
+  >
+    <h2 class="h2" style="margin: 0; font-size: 16px;">Download Resume as PDF</h2>
+    <span id="tooltip"
+          style="display: none; position: absolute;top: -30px;  right: -30px; background-color: #333; color: #fff; padding: 6px 8px; border-radius: 4px; font-size: 12px; white-space: nowrap;">
+      Download in Safari or Firefox for exact PDF
+    </span>
+  </button>
 
-      <article class="resume" data-page="resume">
+  <div style="margin-top: 50px;" id="resume-container"></div>
+</article>
+
+
+
+
+
+
+      <!-- <article class="resume" data-page="resume">
 
         <header>
           <h2 class="h2 article-title">Resume</h2>
@@ -731,7 +753,7 @@
 
         </section>
 
-      </article>
+      </article> -->
 
       <!--
         - #PORTFOLIO
@@ -1027,3 +1049,101 @@
 </body>
 
 </html>
+
+<script>
+  // Load resume.html into the page
+  fetch('resume.html')
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById('resume-container').innerHTML = html;
+    });
+
+  function downloadPDF() {
+    const content = document.getElementById('resume-container').innerHTML;
+
+    const printWindow = window.open('', '', 'width=1000,height=1000');
+    printWindow.document.write(`
+      <html>
+        <head>
+          <title>Resume PDF</title>
+          <style>
+            * {
+              box-sizing: border-box;
+              margin: 0;
+              padding: 0;
+            }
+
+            @media print {
+              html, body {
+                width: 210mm;
+                height: auto;
+                margin: 0;
+                padding: 0;
+                font-size: 9pt !important;
+              }
+
+              body {
+                padding: 5mm !important;
+                  line-height: 1.2 !important; /* 🔽 Reduced line spacing */
+
+              }
+
+              .container {
+                max-width: 100% !important;
+                box-shadow: none !important;
+                margin: 0 !important;
+                padding: 0 !important;
+                display: flex !important;
+                min-height: auto !important;
+              }
+
+              .left-column, .right-column {
+                padding: 20px !important;
+              }
+.left-column {
+  width: 260px !important; /* 🔽 reduced from 350px */
+  background-color: #d4c5a9 !important;
+  -webkit-print-color-adjust: exact !important;
+  print-color-adjust: exact !important;
+  padding: 20px !important;
+  line-height: 1.2 !important;
+}
+
+.right-column {
+  padding: 20px !important;
+  width: calc(100% - 260px) !important; /* fill remaining space */
+}
+.section-title {
+  margin-top: 6px !important;
+  margin-bottom: 6px !important;
+  font-size: 10pt !important;
+  line-height: 1.1 !important;
+}
+  .right-section-title {
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+  font-size: 10pt !important;
+  line-height: 1.1 !important;
+}
+
+              .page-break {
+                page-break-before: always;
+              }
+            }
+          </style>
+        </head>
+        <body>${content}</body>
+      </html>
+    `);
+
+    printWindow.document.close();
+
+    printWindow.onload = () => {
+      printWindow.focus();
+      printWindow.print();
+      printWindow.close();
+    };
+  }
+</script>
+
+

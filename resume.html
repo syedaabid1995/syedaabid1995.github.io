@@ -1,0 +1,492 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Syed Aabid Ahamed - Resume</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                font-family: 'Arial', sans-serif;
+                background-color: #f5f5f5;
+                color: #333;
+            }
+
+            .container {
+                max-width: 900px;
+                margin: 0 auto;
+                background-color: white;
+                box-shadow: 0 0 20px rgba(0,0,0,0.1);
+                display: flex;
+                min-height: 100vh;
+            }
+
+            .left-column {
+                background-color: #d4c5a9;
+                width: 350px;
+                padding: 40px 30px;
+                position: relative;
+            }
+
+            .right-column {
+                flex: 1;
+                padding: 40px 30px;
+                background-color: #f8f8f8;
+            }
+
+            .name {
+                font-size: 36px;
+                font-weight: bold;
+                color: #2c3e50;
+                margin-bottom: 30px;
+                line-height: 1.1;
+            }
+
+            .contact-info {
+                margin-bottom: 40px;
+            }
+
+            .contact-item {
+                margin-bottom: 15px;
+                display: flex;
+                align-items: center;
+                font-size: 14px;
+            }
+
+            .contact-item::before {
+                content: "";
+                width: 16px;
+                height: 16px;
+                margin-right: 10px;
+                background-size: contain;
+                flex-shrink: 0;
+            }
+
+            .email::before {
+                background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>');
+            }
+
+            .phone::before {
+                background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>');
+            }
+
+            .location::before {
+                background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>');
+            }
+
+            .section-title {
+                font-size: 18px;
+                font-weight: bold;
+                color: #2c3e50;
+                margin-bottom: 20px;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+            }
+
+            .skills-list {
+                list-style: none;
+            }
+
+            .skills-list li {
+                margin-bottom: 12px;
+                font-size: 14px;
+                line-height: 1.1;
+                position: relative;
+                padding-left: 12px;
+            }
+
+            .skills-list li::before {
+                content: "•";
+                position: absolute;
+                left: 0;
+                color: #2c3e50;
+                font-weight: bold;
+            }
+
+            .right-section {
+                margin-bottom: 35px;
+            }
+
+            .right-section-title {
+                font-size: 16px;
+                font-weight: bold;
+                color: #2c3e50;
+                margin-bottom: 15px;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+            }
+
+            .professional-summary {
+                font-size: 14px;
+                line-height: 1.4;
+                text-align: justify;
+            }
+
+            .portfolio-link {
+                font-size: 14px;
+                color: #2c3e50;
+                text-decoration: none;
+            }
+
+            .achievements-list {
+                list-style: none;
+            }
+
+            .achievements-list li {
+                margin-bottom: 8px;
+                font-size: 14px;
+                line-height: 1.4;
+                position: relative;
+                padding-left: 12px;
+            }
+
+            .achievements-list li::before {
+                content: "•";
+                position: absolute;
+                left: 0;
+                color: #2c3e50;
+                font-weight: bold;
+            }
+
+            .work-experience {
+                margin-bottom: 30px;
+            }
+
+            .job-title {
+                font-size: 15px;
+                font-weight: bold;
+                color: #2c3e50;
+                margin-bottom: 5px;
+            }
+
+            .job-details {
+                font-size: 13px;
+                color: #666;
+                font-style: italic;
+                margin-bottom: 10px;
+            }
+
+            .job-responsibilities {
+                list-style: none;
+                font-size: 14px;
+            }
+
+            .job-responsibilities li {
+                margin-bottom: 6px;
+                line-height: 1.4;
+                position: relative;
+                padding-left: 12px;
+            }
+
+            .job-responsibilities li::before {
+                content: "•";
+                position: absolute;
+                left: 0;
+                color: #2c3e50;
+                font-weight: bold;
+            }
+
+            .education-item {
+                margin-bottom: 15px;
+            }
+
+            .education-title {
+                font-size: 14px;
+                font-weight: bold;
+                color: #2c3e50;
+            }
+
+            .education-details {
+                font-size: 13px;
+                color: #666;
+                font-style: italic;
+            }
+
+            .project-item {
+                margin-bottom: 20px;
+            }
+
+            .project-title {
+                font-size: 14px;
+                font-weight: bold;
+                color: #2c3e50;
+                margin-bottom: 3px;
+            }
+
+            .project-tech {
+                font-size: 12px;
+                color: #666;
+                font-style: italic;
+                margin-bottom: 5px;
+            }
+
+            .project-description {
+                font-size: 13px;
+                line-height: 1.4;
+            }
+
+            .page-break {
+                page-break-before: always;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="left-column">
+                <div class="name">
+                    SYED<br>
+                    AABID<br>
+                    AHAMED
+                </div>
+                
+                <div class="contact-info">
+                    <div class="contact-item email">syedaabid1995@gmail.com</div>
+                    <div class="contact-item phone">+91 807 242 8026</div>
+                    <div class="contact-item location">Bangalore India</div>
+                </div>
+
+                <div class="section-title">SKILLS</div>
+                <ul class="skills-list">
+                    <li>Flutter: 2.5+ years (BLoC, GetX, Provider, Riverpod)</li>
+                    <li>React Native: 2+ years (Redux, Context API, Navigation)</li>
+                    <li>Native Android: 2 years (Java, Kotlin, Android SDK)</li>
+                </ul>
+
+                <div class="section-title">Backend & Cloud</div>
+                <ul class="skills-list">
+                    <li>Laravel: RESTful APIs, Authentication, Database Design, Eloquent ORM</li>
+                    <li>Firebase: Firestore, Auth, Cloud Functions, FCM, Crashlytics, Hosting</li>
+                    <li>AWS: S3, Textract, Lambda, EC2, CloudWatch</li>
+                    <li>Databases: MySQL, SQLite, Database Firestore</li>
+                    <li>React.js: Hooks, Context API, Component Architecture</li>
+                    <li>Languages: JavaScript, Dart, PHP, HTML5, CSS3</li>
+                </ul>
+
+                <div class="section-title">APIs & Integrations</div>
+                <ul class="skills-list">
+                    <li>Payment Gateways: Stripe API, Razorpay</li>
+                    <li>Maps & Location: Google Maps API, GPS tracking, Geolocation</li>
+                    <li>Social & Communication: Firebase Auth, Social Login (Google, Facebook)</li>
+                    <li>Media & Storage: AWS S3, Firebase Storage, Image/Video processing</li>
+                    <li>Push Notifications: Firebase Cloud Messaging (FCM), APNs</li>
+                </ul>
+
+                <div style="margin-top: 40px;">
+                    <div class="section-title">App Store & Distribution</div>
+                    <ul class="skills-list">
+                        <li>Google Play Store: App publishing, Play Console, ASO</li>
+                        <li>Apple App Store: iOS publishing, App Store Connect, App Review Guidelines</li>
+                        <li>App Store Optimization: Metadata optimization, Screenshots, Reviews management</li>
+                        <li>In-App Purchases: Google Play Billing, Apple StoreKit</li>
+                    </ul>
+
+                    <div class="section-title" style="margin-top: 30px;">DevOps & Tools</div>
+                    <ul class="skills-list">
+                        <li>CI/CD: GitHub Actions, Azure Pipelines, Firebase Hosting</li>
+                        <li>Project Management: Azure Boards, Agile methodology</li>
+                        <li>Version Control: Git, GitHub, GitLab</li>
+                        <li>Testing: Unit Testing, Integration Testing, Flutter Test, Jest</li>
+                        <li>Monitoring: Sentry, Crashlytics, Firebase Analytics</li>
+                    </ul>
+
+                    <div class="section-title" style="margin-top: 30px;">Development Tools</div>
+                    <ul class="skills-list">
+                        <li>VS Code, Android Studio, Xcode, Postman</li>
+                        <li>Additional Technologies</li>
+                        <li>State Management: BLoC, Redux, GetX, Provider, Riverpod</li>
+                        <li>UI/UX: Material Design, Cupertino, Custom Widgets</li>
+                        <li>Networking: RESTful APIs, HTTP, WebSocket, JSON parsing</li>
+                        <li>Security: Firebase Auth, JWT, OAuth, API Security</li>
+                        <li>Performance: App optimization, Memory management, Battery optimization</li>
+                        <li>Localization: Multi-language support, easy_localization</li>
+                        <li>QR/Barcode: QR code generation/scanning, Barcode scanning</li>
+                    </ul>
+
+                    <div class="right-section">
+                    <div class="section-title" style="margin-top: 30px;">EDUCATION</div>
+                    
+                    <div class="education-item">
+                        <div class="education-title">B.Tech - Adhiyamaan College of Engineering</div>
+                        <div class="education-details">Krishnagiri, India • 05/2017</div>
+                    </div>
+
+                
+
+                    <div class="education-item">
+                        <div class="education-title">HSC - Government Boys Hr. Sec. School</div>
+                        <div class="education-details">Krishnagiri, India • 04/2013</div>
+                    </div>
+
+
+                    <div class="education-item">
+                        <div class="education-title">SSLC - Government Boys Hr. Sec. School</div>
+                        <div class="education-details">Krishnagiri, India • 04/2011</div>
+                    </div>
+
+                </div>
+                </div>
+            </div>
+
+            <div class="right-column">
+                <div class="right-section">
+                    <div class="right-section-title">PROFESSIONAL SUMMARY</div>
+                    <div class="professional-summary">
+                        Mobile & Full-Stack Engineer with 6+ years of experience in developing cross-platform applications. Skilled in Flutter, React Native, and backend technologies with a focus on delivering functional, user-friendly applications. Successfully published multiple apps on Play Store and App Store with experience in team collaboration and project management.
+                    </div>
+                </div>
+
+                <div class="right-section">
+                    <div class="right-section-title">PORTFOLIO</div>
+                    <a href="https://syedaabid1995.github.io" class="portfolio-link">https://syedaabid1995.github.io</a>
+                </div>
+
+                <div class="right-section">
+                    <div class="right-section-title">KEY ACHIEVEMENTS</div>
+                    <ul class="achievements-list">
+                        <li>5+ Published Applications on Google Play Store and Apple App Store</li>
+                        <li>Team Leadership experience managing small development teams</li>
+                        <li>CI/CD Implementation for automated testing and deployment</li>
+                        <li>Cross-Platform Expertise with Flutter and React Native</li>
+                        <li>Full-Stack Development capabilities from mobile to backend</li>
+                    </ul>
+                </div>
+
+                <div class="right-section">
+                    <div class="right-section-title">WORK HISTORY</div>
+                    
+                    <div class="work-experience">
+                        <div class="job-title">Mobius Knowledge Services - Mobile Developer & Team Lead</div>
+                        <div class="job-details">Chennai, India (Remote) • 06/2021 - Current</div>
+                        <ul class="job-responsibilities">
+                            <li>Led development team of 2 developers on multiple projects</li>
+                            <li>Managed project timelines and deliverables using Agile methodology</li>
+                            <li>Conducted code reviews and maintained coding standards</li>
+                            <li>Collaborated with clients on requirements and project specifications</li>
+                            <li>Developed mobile applications using React Native and Flutter for cross-platform compatibility</li>
+                            <li>Collaborated with clients to gather requirements, ensuring alignment with project goals</li>
+                            <li>Developed user-friendly mobile applications for iOS and Android platforms using React Native</li>
+                            <li>Developed lesson plans tailored to diverse learning styles and student needs</li>
+                            <li>Developed and maintained RESTful APIs to enhance application performance and user experience</li>
+                            <li>Designed database schemas and optimized queries for efficient data retrieval and storage</li>
+                            <li>Mentored junior developers, providing guidance on best practices and facilitating knowledge sharing sessions</li>
+                        </ul>
+                    </div>
+
+                    <div class="work-experience">
+                        <div class="job-title">Tama Business Solutions - Mobile Application Developer</div>
+                        <div class="job-details">Chennai, India • 12/2018 - 06/2021</div>
+                        <ul class="job-responsibilities">
+                            <li>Developed and maintained mobile applications using Native Android and Flutter</li>
+                            <li>Integrated third-party APIs and services</li>
+                            <li>Implemented testing strategies and debugging procedures</li>
+                            <li>Managed app store submissions and updates</li>
+                            <li>Successfully integrated push notifications into apps, for user engagement</li>
+                        </ul>
+                    </div>
+
+                    <div class="work-experience">
+                        <div class="job-title">Square Dot Solutions - Android Developer</div>
+                        <div class="job-details">Chennai, India • 12/2017 - 12/2018</div>
+                        <ul class="job-responsibilities">
+                            <li>Developed user-friendly mobile applications using Kotlin and Java for Android platform</li>
+                            <li>Collaborated with cross-functional teams to define project requirements and deliver high-quality features</li>
+                            <li>Worked with Android SDK and Material Design principles</li>
+                            <li>Gained experience in mobile development lifecycle</li>
+                            <li>Implemented RESTful APIs to enhance application functionality and improve data handling efficiency</li>
+                            <li>Continuously learned new technologies and frameworks to adapt to evolving industry standards and best practices</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="right-section">
+                    <div class="right-section-title">KEY PROJECTS</div>
+                    
+                    <div class="project-item">
+                        <div class="project-title">Happy Donors - Blood Donation App</div>
+                        <div class="project-tech">Flutter • React.js • Firebase • AWS S3 • Google Maps</div>
+                        <div class="project-description">A blood donation platform connecting donors with NGOs. Built with Flutter for mobile app and React.js for admin dashboard.</div>
+                    </div>
+
+                    <div class="project-item">
+                        <div class="project-title">HariGaji - Salary Management App</div>
+                        <div class="project-tech">Flutter • Firebase • Cloud Functions • BLoC</div>
+                        <div class="project-description">Salary planning and tracking application for companies to manage employee payments and generate reports.</div>
+                    </div>
+
+                    <div class="project-item">
+                        <div class="project-title">Uoojo - E-Commerce Application</div>
+                        <div class="project-tech">Flutter • Laravel • Stripe • Firebase</div>
+                        <div class="project-description">E-commerce platform with product browsing, cart management, and payment processing capabilities.</div>
+                    </div>
+
+                    <div class="project-item">
+                        <div class="project-title">RCA Pass - Club Event Access App</div>
+                        <div class="project-tech">Flutter • Firebase • QR Scanner • FCM</div>
+                        <div class="project-description">Digital membership and event access application for club members with QR-based verification.</div>
+                    </div>
+
+                    <div class="project-item">
+                        <div class="project-title">Flicky - Social Media App</div>
+                        <div class="project-tech">Flutter • Firebase • GetX • Custom Video Player</div>
+                        <div class="project-description">Social media platform for sharing short-form videos with user interaction features.</div>
+                    </div>
+
+                    <div class="project-item">
+                        <div class="project-title">Product Hound - Product Recall Scanner</div>
+                        <div class="project-tech">React Native • Firebase • Redux • Laravel</div>
+                        <div class="project-description">Cross-platform barcode scanning app for checking product recalls and safety information.</div>
+                    </div>
+
+                    <div class="project-item">
+                        <div class="project-title">Flake - Anti dating app</div>
+                        <div class="project-tech">Flutter • In-App Purchases</div>
+                        <div class="project-description">The idea is that if you both end up Flaking it’ll make you laugh, you’ll chat and maybe end up doing something else!</div>
+                    </div>
+
+                    <div class="project-item">
+                        <div class="project-title">School Attendance System (In Development)</div>
+                        <div class="project-tech">Flutter • Laravel • Firebase • Google Maps</div>
+                        <div class="project-description">GPS-based attendance tracking system for educational institutions.</div>
+                    </div>
+                </div>
+
+                <!-- <div class="right-section">
+        <div class="right-section-title">PROFESSIONAL HIGHLIGHTS</div>
+        <ul class="achievements-list">
+            <li><strong>Cross-Platform Development:</strong> Experienced in both Flutter and React Native</li>
+            <li><strong>Full-Stack Capabilities:</strong> Mobile frontend to backend API development</li>
+            <li><strong>Team Collaboration:</strong> Worked effectively in team environments and client interactions</li>
+            <li><strong>Problem Solving:</strong> Ability to debug complex issues and implement solutions</li>
+            <li><strong>Continuous Learning:</strong> Staying updated with latest mobile development trends</li>
+        </ul>
+    </div> -->
+    <!-- <div class="right-section">
+        <div class="right-section-title">TECHNICAL EXPERTISE</div>
+        <ul class="achievements-list">
+            <li>Mobile Architecture</li>
+            <li>State management patterns (BLoC, Redux, GetX)</li>
+            <li>Clean architecture principles</li>
+            <li>Performance optimization techniques</li>
+            <li>Cross-platform development best practices</li>
+            <li>Backend Integration</li>
+            <li>RESTful API design and integration</li>
+            <li>Database design and optimization</li>
+            <li>Cloud services integration</li>
+            <li>Authentication and authorization</li>
+            <li>DevOps & Deployment</li>
+            <li>CI/CD pipeline setup and management</li>
+            <li>App store submission and management</li>
+            <li>Version control and collaboration</li>
+            <li>Testing and quality assurance</li>
+        </ul>
+    </div> -->
+
+            </div>
+        </div>
+    </body>
+    </html> 
