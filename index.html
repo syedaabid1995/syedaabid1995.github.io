@@ -1,1149 +1,526 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Syed Aabid Ahamed - Portfolio</title>
-
-  <!--
-    - favicon
-  -->
-  <link rel="shortcut icon" href="./assets/images/geniuS.png" type="image/x-icon">
-
-  <!--
-    - custom css link
-  -->
-  <link rel="stylesheet" href="./assets/css/style.css">
-
-
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-          
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
-
-  <!--
-    - google font link
-  -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-</head>
-
-<body>
-
-  <!--
-    - #MAIN
-  -->
-
-  <main>
-
-    <!--
-      - #SIDEBAR
-    -->
-
-    <aside class="sidebar" data-sidebar>
-
-      <div class="sidebar-info">
-
-        <figure class="avatar-box">
-          <img src="./assets/images/my-avatar.png" alt="Syed Aabid Ahamed" width="80">
-        </figure>
-
-        <div class="info-content">
-          <h1 class="name" title="Syed Aabid Ahamed">Syed Aabid Ahamed</h1>
-
-          <p class="title">Mobile & Full-Stack Engineer</p>
-       <!-- </br>
-          <p class="title">Kolin | Java | Flutter</p>-->
-        </div>
-
-        <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
-
-          <ion-icon name="chevron-down"></ion-icon>
-        </button>
-
-      </div>
-
-      <div class="sidebar-info_more">
-
-        <div class="separator"></div>
-
-        <ul class="contacts-list">
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
-
-              <a href="mailto:syedaabid1995@gmail.com" class="contact-link">syedaabid1995@gmail.com</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="phone-portrait-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Phone</p>
-
-              <a href="tel:+91 807 242 8026" class="contact-link">+91 807 242 8026</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="calendar-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Birthday</p>
-
-              <time datetime="1982-06-23">Oct 10, 1995</time>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Location</p>
-
-              <address>Krishnagiri</address>
-            </div>
-
-          </li>
-
-        </ul>
-
-        <div class="separator"></div>
-
-        <ul class="social-list">
-
-      
-
-          <li class="social-item">
-            <a href="https://github.com/syedaabid1995" class="social-link" target="_blank">
-              <ion-icon name="logo-github"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="https://join.skype.com/pbXawg0BHyl0" class="social-link" target="_blank">
-              <ion-icon name="logo-skype"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="https://www.linkedin.com/in/syed-aabid-ahamed-arshad-6902b7169/" class="social-link" target="_blank">
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </a>
-          </li>
-
-        
-
-          <li class="social-item">
-            <a href="https://wa.me/+918072428026?text=Hi, Syed" class="social-link" target="_blank">
-              <ion-icon name="logo-whatsapp"></ion-icon>
-            </a>
-          </li>
-
-        </ul>
-
-      </div>
-
-    </aside>
-
-
-
-
-
-    <!--
-      - #main-content
-    -->
-
-    <div class="main-content">
-
-      <!--
-        - #NAVBAR
-      -->
-
-      <nav class="navbar">
-
-        <ul class="navbar-list">
-
-          <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Blog</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Contact</button>
-          </li>
-
-        </ul>
-
-      </nav>
-
-
-
-
-
-      <!--
-        - #ABOUT
-      -->
-
-      <article class="about  active" data-page="about">
-
-        <header>
-          <h2 class="h2 article-title">About me</h2>
-        </header>
-
-        <section class="about-text">
-     <p>Welcome to my portfolio website! I'm <strong>Syed Aabid Ahamed</strong>, a Mobile App Developer with over 6 years of experience in building both Native Android and Hybrid apps using Flutter and React Native. I specialize in crafting cutting-edge mobile applications that are not only functional but also visually appealing.</p>
-
-    <p>My passion for technology, combined with deep expertise in Android and cross-platform development, has enabled me to work with clients ranging from startups to large enterprises. I’ve successfully built apps across various industries including online appointment booking, party hall reservation, auditing, finance, and e-commerce.</p>
-
-    <p>In addition to mobile app development, I also work with backend technologies like <strong>Laravel</strong> and <strong>NodeJS</strong>, and have experience deploying backends on platforms such as <strong>AWS</strong> and <strong>Hostinger</strong>. Whether it's Firebase, REST APIs, or cloud deployment, I can handle full-stack mobile development needs end-to-end.</p>
-
-    <p>My portfolio highlights some of my best work—projects I’ve developed from scratch as well as collaborations with talented teams. I take pride in my attention to detail, clean architecture, and delivering high-quality solutions tailored to client needs.</p>
-
-    <p>If you're looking for a reliable developer to build a new app or enhance an existing one, I'm here to help. Please browse through my portfolio and feel free to <strong>get in touch</strong> to discuss your project.</p>
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Syed Aabid Ahamed – Mobile & Full‑Stack Engineer</title> s
+  <meta name="description" content="Portfolio of Syed Aabid Ahamed – Mobile App Developer." Flutter, React Native, Android, iOS, Laravel, Firebase, AWS." />
+  <meta name="theme-color" content="#0f172a" /> s
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #0b1020;         /* deep navy */
+      --panel: #0f1730;      /* card bg */
+      --muted: #94a3b8;      /* slate-400 */
+      --text: #e5e7eb;       /* gray-200 */
+      --accent: #60a5fa;     /* blue-400 */
+      --accent-2: #34d399;   /* emerald-400 */
+      --ring: rgba(96,165,250,.35);
+      --shadow: 0 10px 30px rgba(0,0,0,.35);
+      --radius: 18px;
+      --maxw: 1100px;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin:0; padding:0; background:linear-gradient(180deg,var(--bg),#0b1226 60%, #0b142b); color:var(--text); font-family:Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; scroll-behavior:smooth; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .container { width:100%; max-width:var(--maxw); margin:0 auto; padding:0 20px; }
+    /* Nav */
+    .nav { position:sticky; top:0; z-index:50; background:rgba(11,16,32,.75); backdrop-filter: blur(8px); border-bottom:1px solid rgba(148,163,184,.15); }
+    .nav-inner { display:flex; align-items:center; justify-content:space-between; height:64px; }
+    .brand { display:flex; align-items:center; gap:10px; font-weight:800; letter-spacing:.3px; }
+    .brand .dot { width:10px; height:10px; border-radius:50%; background:linear-gradient(45deg,var(--accent), var(--accent-2)); box-shadow:0 0 0 6px rgba(96,165,250,.12); }
+    .menu { display:flex; gap:18px; align-items:center; }
+    .menu a { padding:8px 12px; border-radius:999px; }
+    .menu a:hover { background:rgba(148,163,184,.12); text-decoration:none; }
+    .cta { background:linear-gradient(90deg,var(--accent),var(--accent-2)); color:#0b1020; padding:10px 14px; border-radius:999px; font-weight:700; box-shadow:var(--shadow); border:none; }
+    .cta:hover { filter:brightness(1.1); cursor:pointer; }
+    .menu-toggle { display:none; }
+
+    /* Hero */
+    .hero { position:relative; padding:96px 0 56px; overflow:hidden; }
+    .glow { position:absolute; inset:-10% -10% auto auto; width:600px; height:600px; background:radial-gradient(600px 600px at 75% 25%, rgba(96,165,250,.18), rgba(52,211,153,.10) 40%, transparent 60%); pointer-events:none; z-index:-1; }
+    .hero h1 { font-size: clamp(32px, 6vw, 58px); line-height:1.05; margin:0 0 14px; letter-spacing:.2px; }
+    .hero p.lead { font-size: clamp(16px, 2.3vw, 20px); color: var(--muted); max-width:850px; }
+    .pill { display:inline-flex; align-items:center; gap:8px; background:rgba(148,163,184,.12); color:#cbd5e1; border:1px solid rgba(148,163,184,.2); padding:8px 12px; border-radius:999px; margin:18px 0 0; }
+
+    /* Sections */
+    section { padding:56px 0; }
+    h2.sec { font-size: clamp(22px, 2.8vw, 32px); margin:0 0 22px; letter-spacing:.3px; }
+    .grid { display:grid; gap:18px; }
+    .grid-2 { grid-template-columns: repeat(2, minmax(0,1fr)); }
+    .grid-3 { grid-template-columns: repeat(3, minmax(0,1fr)); }
+
+    /* Cards */
+    .card { background:linear-gradient(180deg, rgba(15,23,48,.95), rgba(15,22,40,.9)); border:1px solid rgba(148,163,184,.14); border-radius:var(--radius); box-shadow:var(--shadow); padding:20px; }
+    .card:hover { border-color: rgba(96,165,250,.5); box-shadow: 0 12px 34px rgba(2, 132, 199, .18); }
+
+    /* About */
+    .about p { color:#d1d5db; line-height:1.8; }
+
+    /* Skills */
+    .skills .tag { display:inline-flex; align-items:center; gap:8px; padding:8px 12px; margin:6px; background:rgba(148,163,184,.12); border:1px solid rgba(148,163,184,.2); border-radius:999px; font-size:14px; }
+    .skills .tag .dot { width:6px; height:6px; border-radius:50%; background:var(--accent); box-shadow:0 0 0 4px rgba(96,165,250,.15); }
+
+    /* Projects */
+    .project { display:flex; flex-direction:column; gap:12px; }
+    .project img { width:100%; height:200px; object-fit:cover; border-radius:14px; border:1px solid rgba(148,163,184,.2); background:#101935; }
+    .project h3 { margin:6px 0 4px; font-size:20px; }
+    .meta { display:flex; flex-wrap:wrap; gap:8px; color:var(--muted); font-size:14px; }
+    .chips { display:flex; flex-wrap:wrap; gap:8px; margin-top:8px; }
+    .chip { font-size:12px; padding:6px 10px; background:rgba(96,165,250,.12); border:1px solid rgba(96,165,250,.25); border-radius:999px; }
+
+    /* Testimonials */
+    .quote { font-size:18px; color:#e2e8f0; line-height:1.6; }
+    .quote footer { color:var(--muted); margin-top:10px; font-size:14px; }
+
+    /* Contact */
+    .contact-card form { display:grid; gap:12px; }
+    .input { background:#0c142c; border:1px solid rgba(148,163,184,.2); padding:12px 14px; border-radius:12px; color:#e5e7eb; }
+    .input:focus { outline:none; border-color:var(--accent); box-shadow:0 0 0 4px var(--ring); }
+    .btn { display:inline-flex; justify-content:center; align-items:center; gap:8px; background:linear-gradient(90deg,var(--accent),var(--accent-2)); color:#0b1020; padding:12px 16px; border-radius:12px; border:none; font-weight:700; }
+    .btn:hover { filter:brightness(1.08); cursor:pointer; }
+
+    /* Footer */
+    footer { padding:32px 0 60px; color:var(--muted); font-size:14px; text-align:center; }
+
+    /* Responsive */
+    @media (max-width: 900px) {
+      .grid-2 { grid-template-columns: 1fr; }
+      .grid-3 { grid-template-columns: 1fr; }
+      .menu { display:none; }
+      .menu-toggle { display:inline-flex; }
+      .hero { padding-top:72px; }
+    }
+    /* --- UI Enhancements --- */
+    .icon-btn{background:transparent;border:1px solid rgba(148,163,184,.25);padding:8px 10px;border-radius:12px;color:var(--text)}
+    .icon-btn:hover{background:rgba(148,163,184,.12);cursor:pointer}
+    .hero .cta-row{display:flex;gap:12px;margin-top:20px;flex-wrap:wrap}
+    .btn.secondary{background:transparent;color:var(--text);border:1px solid rgba(148,163,184,.25)}
+    .btn.secondary:hover{background:rgba(148,163,184,.1)}
     
-        </section>
-
-
-        <!--
-          - service
-        -->
-
-        <section class="service">
-
-          <h3 class="h3 service-title">What I will do for you</h3>
-
-          <ul class="service-list">
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-design.svg
-                " alt="design icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Concept Brainstorming</h4>
-
-                <p class="service-item-text">
-                  Converting your business requirements into application prototypes. Understanding the requirements and identitying the key features.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">UI/UX research</h4>
-            
-                <p class="service-item-text">
-                  Creating wireframes based on market trends on UI/UX. Creating user friendly and appealing UI which will allow the user to use the app seamlessly.      
-                </p>
-              </div>
-
-            </li>
-
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">App Development from Scratch</h4>
-
-                <p class="service-item-text">
-                  Identify the purpose of the app and the target audience. Architechure proof and Understanding what the app will do, who it will benefit, and how it will make a difference.
-                </p>
-              </div>
-
-            </li>
-
-          
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Bug fixing and Maintenance</h4>
-
-                <p class="service-item-text">
-                  Deploying the app on the play store and app store. nsure the app continues to function as expected and meets the changing needs of users. 
-                </p>
-              </div>
-
-            </li>
-
-          </ul>
-
-        </section>
-
-
-         <!--
-          - Techinal skills
-        -->
-        <section class="service">
-
-          <h3 class="h3 service-title">Technical Skills</h3>
-
-        <ul class="service-list">
-
-  <li class="service-item">
-    <div class="service-content-box">
-      <h4 class="h4 service-item-title">Languages</h4>
-      <p class="service-item-text">
-        Java, Kotlin, XML, Dart, Swift, Storyboard, PHP, NodeJS
-      </p>
-    </div>
-  </li>
-
-  <li class="service-item">
-    <div class="service-content-box">
-      <h4 class="h4 service-item-title">Frameworks</h4>
-      <p class="service-item-text">
-        Android SDK, Flutter, React, React Native, Laravel, AWS Services
-      </p>
-    </div>
-  </li>
-
-  <li class="service-item">
-    <div class="service-content-box">
-      <h4 class="h4 service-item-title">Database</h4>
-      <p class="service-item-text">
-        MySQL, SQLite, Firebase Realtime Database, Firestore, Hive
-      </p>
-    </div>
-  </li>
-
-  <li class="service-item">
-    <div class="service-content-box">
-      <h4 class="h4 service-item-title">Networking</h4>
-      <p class="service-item-text">
-        REST API, Retrofit, Volley, OkHttp, Dio, GraphQL
-      </p>
-    </div>
-  </li>
-
-  <li class="service-item">
-    <div class="service-content-box">
-      <h4 class="h4 service-item-title">Architectures</h4>
-      <p class="service-item-text">
-        MVP, MVVM, Repository, BLoC, Redux, GetX, Provider, MobX
-      </p>
-    </div>
-  </li>
-
-  <li class="service-item">
-    <div class="service-content-box">
-      <h4 class="h4 service-item-title">Integrations</h4>
-      <p class="service-item-text">
-        Google APIs, Maps SDK, Firebase Cloud Messaging (FCM), Twilio, OneSignal, Social Auth, Deeplinking
-      </p>
-    </div>
-  </li>
-
-  <li class="service-item">
-    <div class="service-content-box">
-      <h4 class="h4 service-item-title">Payment Gateways</h4>
-      <p class="service-item-text">
-        Razorpay, PayPal, Stripe
-      </p>
-    </div>
-  </li>
-
-  <li class="service-item">
-    <div class="service-content-box">
-      <h4 class="h4 service-item-title">Version Control</h4>
-      <p class="service-item-text">
-        Bitbucket, GitHub, Azure Repos
-      </p>
-    </div>
-  </li>
-
-  <li class="service-item">
-    <div class="service-content-box">
-      <h4 class="h4 service-item-title">Tools</h4>
-      <p class="service-item-text">
-        Android Studio, Xcode, VS Code, Postman, Firebase Console, Hostinger, Figma
-      </p>
-    </div>
-  </li>
-
-</ul>
-
-
-        </section>
-
-
-
-        <!--
-          - testimonials modal
-        -->
-
-        <div class="modal-container" data-modal-container>
-
-          <div class="overlay" data-overlay></div>
-
-          <section class="testimonials-modal">
-
-            <button class="modal-close-btn" data-modal-close-btn>
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
-
-            <div class="modal-img-wrapper">
-              <figure class="modal-avatar-box">
-                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
-              </figure>
-
-              <img src="./assets/images/icon-quote.svg" alt="quote icon">
-            </div>
-
-            <div class="modal-content">
-
-              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
-
-              <time datetime="2021-06-14">14 June, 2021</time>
-
-              <div data-modal-text>
-                <p>
-                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                  lot of experience
-                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                  consectetur adipiscing
-                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                </p>
-              </div>
-
-            </div>
-
-          </section>
-
-        </div>
-
-
-       
-
-      </article>
-
-
-
-
-
-      <!--
-        - #RESUME
-      -->
-<article class="resume" data-page="resume">
- <button 
-    onclick="downloadPDF()"
-    style="display: flex; justify-content: flex-end; margin-top: 50px; position: relative;"
-    onmouseover="document.getElementById('tooltip').style.display = 'block'"
-    onmouseout="document.getElementById('tooltip').style.display = 'none'"
-  >
-    <h2 class="h2" style="margin: 0; font-size: 16px;">Download Resume as PDF</h2>
-    <span id="tooltip"
-          style="display: none; position: absolute;top: -30px;  right: -30px; background-color: #333; color: #fff; padding: 6px 8px; border-radius: 4px; font-size: 12px; white-space: nowrap;">
-      Download in Safari or Firefox for exact PDF
-    </span>
-  </button>
-
-  <div style="margin-top: 50px;" id="resume-container"></div>
-</article>
-
-
-
-
-
-
-      <!-- <article class="resume" data-page="resume">
-
-        <header>
-          <h2 class="h2 article-title">Resume</h2>
-        </header>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Experience</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Mobius Knowledge Service, Chennai</h4>
-
-              <span>Senior Mobile App Developer (June 2021 - Present)</span>
-
-              <p class="timeline-text">
-                Designed and developed cross-platform mobile applications using Flutter framework, resulting in a 30% increase in user engagement.
-              </p>
-
-              <p class="timeline-text">
-                Collaborated with product managers and designers to translate requirements into technical specifications and UI designs.
-              </p>
-
-              <p class="timeline-text">
-                Implemented custom widgets and animations to enhance the user interface and provide a seamless user experience.
-              </p>
-
-              <p class="timeline-text">
-                Integrated third-party APIs for features such as push notifications, social media sharing, and in-app purchases.
-              </p>
-
-              <p class="timeline-text">
-                Optimized app performance by identifying and resolving memory leaks, reducing app startup time by 40%.
-              </p>
-
-
-              <p class="timeline-text">
-                Led code reviews and mentored junior developers to ensure code quality and adherence to best practices.
-              </p>
-
-              <p class="timeline-text">
-                Implemented automated testing strategies to ensure the reliability and stability of the applications.
-              </p>
-
-              <p class="timeline-text">
-                Deployed applications to the Google Play Store and managed the release process using CI/CD pipelines.
-              </p>
-
-            </li>
-
-
-    
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Tama Business Solutions, Chennai</h4>
-
-              <span>Android Developer (Dec 2018 - June 2021)</span>
-
-              <p class="timeline-text">
-                Developed and maintained Android applications using Java and Kotlin, adhering to best practices and design patterns.
-              </p>
-
-              <p class="timeline-text">
-                Collaborated with cross-functional teams to deliver high-quality, scalable, and performant mobile applications.
-              </p>
-
-              <p class="timeline-text">
-                Implemented new features and enhancements based on project requirements and user feedback.
-              </p>
-
-              <p class="timeline-text">
-                Acquired proficiency in Flutter framework while working in the company.
-              </p>
-
-              <p class="timeline-text">
-                Designed and developed cross-platform mobile applications using Flutter.
-              </p>
-
-              <p class="timeline-text">
-                Translated UI/UX designs into high-quality code, ensuring pixel-perfect implementation and smooth user interactions.
-              </p>
-
-              <p class="timeline-text">
-                Implemented state management techniques using Provider or Bloc pattern to manage application state efficiently.
-              </p>
-
-              <p class="timeline-text">
-                Published applications to Google Play Store and Apple App Store, managing the entire release process.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Square Dot Solutions, Chennai</h4>
-              <h4 class="h4 timeline-item-title"></h4>
-
-              <span>Junior Android Developer (Dec 2017 - Dec 2018)</span>
-
-              <p class="timeline-text">
-                Contributed to the development of Android applications from concept to deployment, including UI implementation, functionality enhancements, and bug fixes.
-              </p>
-
-              <p class="timeline-text">
-                Worked closely with senior developers to learn and apply best practices in Android development, including code structuring, naming conventions, and design patterns.
-              </p>
-
-              <p class="timeline-text">
-                Assisted in integrating third-party APIs for features such as authentication, data retrieval, and analytics.
-              </p>
-
-              <p class="timeline-text">
-                Participated in code reviews and provided feedback on code quality, readability, and maintainability.
-              </p>
-
-              <p class="timeline-text">
-                Collaborated with cross-functional teams to prioritize tasks, track progress, and deliver projects on time.
-              
-              </p>
-
-
-              <p class="timeline-text">
-                Conducted unit testing and assisted in writing test cases to ensure the reliability and stability of the applications.
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-        <section class="skill">
-
-          <h3 class="h3 skills-title">My skills</h3>
-
-          <ul class="skills-list content-card">
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Android App development</h5>
-                <data value="80">75%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 80%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Flutter App development</h5>
-                <data value="50">90%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 50%;"></div>
-              </div>
-
-            </li>
-
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Laravel</h5>
-                <data value="70">70%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 70%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">NodeJS</h5>
-                <data value="90">50%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 90%;"></div>
-              </div>
-
-            </li>
-
-          </ul>
-
-        </section>
-
-      </br>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Education</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Adhiyamaan College of Engineering - Hosur</h4>
-
-              <span>2013 — 2017</span>
-
-              <p class="timeline-text">
-               Adhiyamaan College of Engineering - Hosur - 75%
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Government Boys Higher Secondary School</h4>
-
-              <span>2012 — 2013</span>
-
-              <p class="timeline-text">
-                HSC - 75%
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Government Boys Higher Secondary School</h4>
-
-              <span>2010 - 2011</span> 
-
-              <p class="timeline-text">
-                SSLC - 86%
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-      </article> -->
-
-      <!--
-        - #PORTFOLIO
-      -->
-
-      <article class="portfolio" data-page="portfolio">
-
-        <header>
-          <h2 class="h2 article-title">Portfolio</h2>
-        </header>
-
-        <section class="projects">
-
-          <!-- <ul class="filter-list">
-
-            <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Native apps</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Cross platform apps</button>
-            </li>
-
-
-
-          </ul> -->
-
-          <div class="filter-select-box">
-
-            <button class="filter-select" data-select>
-
-              <div class="select-value" data-selecct-value>Select category</div>
-
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
-
-            </button>
-
-            <!-- <ul class="select-list">
-
-              <li class="select-item">
-                <button data-select-item>All</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Native apps</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Cross platform apps</button>
-              </li> 
-
-
-
-            </ul> -->
-
-          </div>
-
-          <ul class="project-list">
-
-  <li class="project-item active" data-filter-item data-category="cross platform apps">
-    <a href="https://play.google.com/store/apps/details?id=com.techstar.harigaji&hl=en_IN" target="_blank">
-      <figure class="project-img">
-        <div class="project-item-icon-box">
-          <ion-icon name="eye-outline"></ion-icon>
-        </div>
-        <img src="./assets/images/banners/harigaji_banner.webp" alt="HariGaji" loading="lazy">
-      </figure>
-      <h3 class="project-title">HariGaji</h3>
-      <p class="project-category">Financial app to get your salary in advance</p>
-    </a>
-  </li>
-
-  <li class="project-item active" data-filter-item data-category="cross platform apps">
-    <a href="https://play.google.com/store/apps/details?id=com.customerbilltimeapp" target="_blank">
-      <figure class="project-img">
-        <div class="project-item-icon-box">
-          <ion-icon name="eye-outline"></ion-icon>
-        </div>
-        <img src="./assets/images/banners/uoojo_banner.webp" alt="Uoojo" loading="lazy">
-      </figure>
-      <h3 class="project-title">Uoojo</h3>
-      <p class="project-category">E-Commerce app for daily needs and shopping</p>
-    </a>
-  </li>
-
-  <li class="project-item active" data-filter-item data-category="cross platform apps">
-    <a href="https://play.google.com/store/apps/details?id=com.hub.pass" target="_blank">
-      <figure class="project-img">
-        <div class="project-item-icon-box">
-          <ion-icon name="eye-outline"></ion-icon>
-        </div>
-        <img src="./assets/images/banners/rca_banner.webp" alt="RCA Pass" loading="lazy">
-      </figure>
-      <h3 class="project-title">RCA Pass</h3>
-      <p class="project-category">Club management app for racecourse PASS members</p>
-    </a>
-  </li>
-
-  <li class="project-item active" data-filter-item data-category="cross platform apps">
-    <a href="https://play.google.com/store/apps/details?id=com.flicky.live" target="_blank">
-      <figure class="project-img">
-        <div class="project-item-icon-box">
-          <ion-icon name="eye-outline"></ion-icon>
-        </div>
-        <img src="./assets/images/banners/flicky_banner.webp" alt="Flicky" loading="lazy">
-      </figure>
-      <h3 class="project-title">Flicky</h3>
-      <p class="project-category">Social media app like Instagram</p>
-    </a>
-  </li>
-
-  <li class="project-item active" data-filter-item data-category="native apps">
-    <a href="https://apps.apple.com/us/app/product-hound/id1526655979" target="_blank">
-      <figure class="project-img">
-        <div class="project-item-icon-box">
-          <ion-icon name="eye-outline"></ion-icon>
-        </div>
-        <img src="./assets/images/banners/product_hound_banner.webp" alt="Product Hound" loading="lazy">
-      </figure>
-      <h3 class="project-title">Product Hound</h3>
-      <p class="project-category">Recalls alert app for consumer safety</p>
-    </a>
-  </li>
-
-  <li class="project-item active" data-filter-item data-category="native apps">
-    <a href="https://play.google.com/store/apps/details?id=ngo.happy_donors" target="_blank">
-      <figure class="project-img">
-        <div class="project-item-icon-box">
-          <ion-icon name="eye-outline"></ion-icon>
-        </div>
-        <img src="./assets/images/banners/happy_donors_banner.webp" alt="Happy Donors" loading="lazy">
-      </figure>
-      <h3 class="project-title">Happy Donors</h3>
-      <p class="project-category">Blood donation management app for NGOs</p>
-    </a>
-  </li>
-
-</ul>
-
-
-        </section>
-
-      </article>
-
-      <!--
-        - #BLOG
-      -->
-
-      <article class="blog" data-page="blog">
-
-        <header>
-          <h2 class="h2 article-title">Blog</h2>
-        </header>
-
-        <section class="blog-posts">
-
-          <div class="blog-meta">
-            <p class="blog-category">IN PROGRESS</p>
-
-          <!-- <span class="dot"></span>
-
-            <time datetime="IN PROGRESS">IN PROGRESS</time>
-            --> 
-          </div>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #CONTACT
-      -->
-
-      <article class="contact" data-page="contact">
-
-        <header>
-          <h2 class="h2 article-title">Contact</h2>
-        </header>
-
-        <li class="contact-item">
-
-          <div class="icon-box">
-            <ion-icon name="mail-outline"></ion-icon>
-          </div>
-
-          <div class="contact-info">
-            <p class="contact-title">Email</p>
-
-            <a href="mailto:syedaabid1995@gmail.com" class="contact-link">syedaabid1995@gmail.com</a>
-          </div>
-
-        </li>
-
-      </br>
-
-        <li class="contact-item">
-
-          <div class="icon-box">
-            <ion-icon name="logo-whatsapp"></ion-icon>
-          </div>
-
-
-          <div class="contact-info">
-            <p class="contact-title">Whatsapp</p>
-            <a href="https://api.whatsapp.com/send?phone=918072428026" target="_blank" rel="noopener noreferrer" class="contact-link">+91 807 242 8026</a>
-          </div>
-
-        </li>
-
-      </br>
-
-      <li class="contact-item">
-
-        <div class="icon-box">
-          <ion-icon name="logo-linkedin"></ion-icon>
-        </div>
-
-
-        <div class="contact-info">
-          <p class="contact-title">Linked in</p>
-          <a href="https://www.linkedin.com/in/syed-aabid-ahamed-arshad-6902b7169/" target="_blank" rel="noopener noreferrer" class="contact-link">Syed</a>
-        </div>
-
-      </li>
-
-    </br>
-
-        <li class="contact-item">
-
-        <!-- <section class="mapbox" data-mapbox>
-          <figure>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199666.5651251294!2d-121.58334177520186!3d38.56165006739519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ac672b28397f9%3A0x921f6aaa74197fdb!2sSacramento%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
-              width="400" height="300" loading="lazy"></iframe>
-          </figure>
-        </section> -->
-
-        <!-- <section class="contact-form">
-
-          <h3 class="h3 form-title">Contact Form</h3>
-
-          <form action="#" class="form" data-form>
-
-            <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
-
-              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
-            </div>
-
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
-
-            <button class="form-btn" type="submit" data-form-btn>
-              <ion-icon name="paper-plane"></ion-icon>
-              <span>Send Message</span>
-            </button>
-
-          </form>
-
-        </section> -->
-
-      </article>
-
-    </div>
-
-  </main>
-
-
-
-
-
-
-  <!--
-    - custom js link
-  -->
-  <script src="./assets/js/script.js"></script>
-
-  <!--
-    - ionicon link
-  -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
-</body>
-
-</html>
-
-<script>
-  // Load resume.html into the page
-  fetch('resume.html')
-    .then(res => res.text())
-    .then(html => {
-      document.getElementById('resume-container').innerHTML = html;
+    /* Fancy borders */
+    .card.gradient{position:relative;}
+    .card.gradient:before{content:"";position:absolute;inset:-1px;border-radius:calc(var(--radius) + 1px);padding:1px;background:linear-gradient(120deg,rgba(96,165,250,.6),rgba(52,211,153,.5),rgba(96,165,250,.6));-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;}
+
+    /* Timeline */
+    .timeline{position:relative;margin:8px 0;padding-left:22px}
+    .timeline:before{content:"";position:absolute;left:8px;top:2px;bottom:2px;width:2px;background:rgba(148,163,184,.25)}
+    .tl-item{position:relative;margin:0 0 18px 0;padding-left:10px}
+    .tl-item:before{content:"";position:absolute;left:-16px;top:6px;width:10px;height:10px;border-radius:50%;background:linear-gradient(45deg,var(--accent),var(--accent-2));box-shadow:0 0 0 5px rgba(96,165,250,.12)}
+    .tl-head{display:flex;justify-content:space-between;gap:12px}
+    .tl-role{font-weight:700}
+    .tl-meta{color:var(--muted);font-size:14px}
+
+    /* Project hover */
+    .project{transition:transform .25s ease, box-shadow .25s ease}
+    .project:hover{transform:translateY(-4px)}
+
+    /* Back to top */
+    #toTop{position:fixed;right:18px;bottom:18px;opacity:0;pointer-events:none;transition:opacity .25s ease, transform .25s ease;transform:translateY(12px)}
+    #toTop.show{opacity:1;pointer-events:auto;transform:translateY(0)}
+
+    /* Light theme support */
+    :root.light{--bg:#f7f8fb;--panel:#ffffff;--text:#0b1020;--muted:#4b5563;--shadow:0 10px 30px rgba(0,0,0,.08)}
+    :root.light .nav{background:rgba(255,255,255,.75);border-bottom:1px solid rgba(0,0,0,.06)}
+    :root.light a{color:#2563eb}
+    :root.light .card{background:#fff;border:1px solid rgba(0,0,0,.06)}
+    :root.light .hero p.lead{color:#374151}
+  </style>
+  <script>
+    // Theme
+    function applyTheme(mode){
+      const root=document.documentElement; root.classList.toggle('light', mode==='light');
+      localStorage.setItem('theme', mode);
+    }
+    function toggleTheme(){
+      const current = document.documentElement.classList.contains('light') ? 'light' : 'dark';
+      applyTheme(current==='light' ? 'dark' : 'light');
+    }
+    // Mobile menu
+    function toggleMenu(){ const m=document.getElementById('menu-mobile'); m.hidden=!m.hidden; }
+    // Simple reveal on scroll
+    const io = new IntersectionObserver(entries => { entries.forEach(e=>{ if(e.isIntersecting){ e.target.style.opacity=1; e.target.style.transform='translateY(0)'; }}) }, {threshold:.15});
+    // Back to top
+    function onScroll(){ const b=document.getElementById('toTop'); if(window.scrollY>300){ b.classList.add('show'); } else { b.classList.remove('show'); } }
+    window.addEventListener('DOMContentLoaded', ()=>{
+      // init theme
+      const saved=localStorage.getItem('theme');
+      const prefersLight=window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches;
+      applyTheme(saved || (prefersLight? 'light':'dark'));
+      // reveal
+      document.querySelectorAll('.reveal').forEach(el=>{ el.style.opacity=0; el.style.transform='translateY(16px)'; el.style.transition='all .6s ease'; io.observe(el); });
+      // scroll
+      window.addEventListener('scroll', onScroll);
+      onScroll();
     });
-
-  function downloadPDF() {
-    const content = document.getElementById('resume-container').innerHTML;
-
-    const printWindow = window.open('', '', 'width=1000,height=1000');
-    printWindow.document.write(`
-      <html>
-        <head>
-          <title>Resume PDF</title>
-          <style>
-            * {
-              box-sizing: border-box;
-              margin: 0;
-              padding: 0;
-            }
-
-            @media print {
-              html, body {
-                width: 210mm;
-                height: auto;
-                margin: 0;
-                padding: 0;
-                font-size: 9pt !important;
-              }
-
-              body {
-                padding: 5mm !important;
-                  line-height: 1.2 !important; /* 🔽 Reduced line spacing */
-
-              }
-
-              .container {
-                max-width: 100% !important;
-                box-shadow: none !important;
-                margin: 0 !important;
-                padding: 0 !important;
-                display: flex !important;
-                min-height: auto !important;
-              }
-
-              .left-column, .right-column {
-                padding: 20px !important;
-              }
-.left-column {
-  width: 260px !important; /* 🔽 reduced from 350px */
-  background-color: #d4c5a9 !important;
-  -webkit-print-color-adjust: exact !important;
-  print-color-adjust: exact !important;
-  padding: 20px !important;
-  line-height: 1.2 !important;
-}
-
-.right-column {
-  padding: 20px !important;
-  width: calc(100% - 260px) !important; /* fill remaining space */
-}
-.section-title {
-  margin-top: 6px !important;
-  margin-bottom: 6px !important;
-  font-size: 10pt !important;
-  line-height: 1.1 !important;
-}
-  .right-section-title {
-  margin-top: 0px !important;
-  margin-bottom: 0px !important;
-  font-size: 10pt !important;
-  line-height: 1.1 !important;
-}
-
-              .page-break {
-                page-break-before: always;
-              }
-            }
-          </style>
-        </head>
-        <body>${content}</body>
-      </html>
-    `);
-
-    printWindow.document.close();
-
-    printWindow.onload = () => {
-      printWindow.focus();
-      printWindow.print();
-      printWindow.close();
-    };
+  </script>
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Syed Aabid Ahamed",
+    "jobTitle": "Mobile App Developer",
+    "url": "https://syedaabid1995.github.io/",
+    "email": "mailto:syedaabid1995@gmail.com",
+    "telephone": "+91 8072428026",
+    "sameAs": [
+      "https://github.com/syedaabid1995",
+      "https://www.linkedin.com/in/syed-aabid-ahamed-arshad-6902b7169"
+    ],
+    "knowsAbout": ["Flutter","React Native","Android","iOS","Laravel","Firebase","AWS","Razorpay","Stripe","PayPal","Node.js"]
   }
-</script>
+  </script>
+</head>
+<body>
+  <!-- NAV -->
+  <header class="nav">
+    <div class="container nav-inner">
+      <div class="brand">
+        <span class="dot" aria-hidden="true"></span>
+        <span>Syed Aabid Ahamed</span>
+      </div>
+      <nav class="menu" aria-label="primary">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#services">Services</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact">Contact</a>
+        <button class="icon-btn" onclick="toggleTheme()" title="Toggle theme">🌗</button>
+        <a class="cta" href="Syed_Aabid_Resume.pdf" download>Resume</a>
+      </nav>
+      <button class="menu-toggle btn" aria-label="Toggle Menu" onclick="toggleMenu()">Menu</button>
+    </div>
+    <div id="menu-mobile" class="container" hidden>
+      <div class="card" style="margin:12px 0; display:grid; gap:8px;">
+        <a href="#about" onclick="toggleMenu()">About</a>
+        <a href="#skills" onclick="toggleMenu()">Skills</a>
+        <a href="#projects" onclick="toggleMenu()">Projects</a>
+        <a href="#services" onclick="toggleMenu()">Services</a>
+        <a href="#testimonials" onclick="toggleMenu()">Testimonials</a>
+        <a href="#contact" onclick="toggleMenu()">Contact</a>
+        <a class="cta" href="Syed_Aabid_Resume.pdf" download>Resume</a>
+      </div>
+    </div>
+  </header>
 
+  <!-- HERO -->
+  <section class="hero">
+    <div class="glow"></div>
+    <div class="container">
+      <div class="reveal">
+        <h1>Mobile & Full‑Stack Engineer crafting fast, reliable apps.</h1>
+        <p class="lead">I design, build, and scale cross‑platform apps with <strong>Flutter</strong> & <strong>React Native</strong>, backed by robust APIs in <strong>Laravel/Node</strong>, and cloud services on <strong>Firebase/AWS</strong>. I ship MVPs fast and focus on performance, reliability (<strong>99.9% crash‑free</strong>), and clean architecture.</p>
+        <div class="pill" aria-label="quick-info">
+          <span>📍 Chennai, India • Open to Remote</span>
+        </div>
+        <div class="cta-row">
+          <a class="btn" href="#contact">Hire Me</a>
+          <a class="btn secondary" href="https://github.com/syedaabid1995" target="_blank" rel="noreferrer">GitHub</a>
+          <a class="btn secondary" href="https://www.linkedin.com/in/syed-aabid-ahamed-arshad-6902b7169" target="_blank" rel="noreferrer">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container grid grid-2">
+      <div class="card reveal about">
+        <h2 class="sec">About</h2>
+        <p>
+          I’m <strong>Syed Aabid Ahamed</strong>, a Mobile App Developer with 7+ years building scalable Android, iOS, and web experiences. I specialize in <strong>Flutter</strong> & <strong>React Native</strong> for the front‑end, and <strong>Laravel/Node</strong> APIs with <strong>Firebase/AWS</strong> on the back‑end. I enjoy <em>end‑to‑end ownership</em>—from shaping product requirements to delivery, monitoring, and iteration.
+        </p>
+        <p>
+          Highlights: reduced response times by <strong>30%</strong> and increased donor signups by <strong>25%</strong> through better UX, caching, and API optimizations. I like building reliably fast software with clean code, strong testing, and thoughtful UX.
+        </p>
+        <div class="meta" style="margin-top:10px;">
+          <span>📧 <a href="mailto:syedaabid1995@gmail.com">syedaabid1995@gmail.com</a></span>
+          <span>·</span>
+          <span>🔗 <a href="https://github.com/syedaabid1995" target="_blank" rel="noreferrer">GitHub</a></span>
+          <span>·</span>
+          <span>💼 <a href="https://www.linkedin.com/in/syed-aabid-ahamed-arshad-6902b7169" target="_blank" rel="noreferrer">LinkedIn</a></span>
+        </div>
+      </div>
+      <div class="grid">
+        <div class="card reveal">
+          <h3 style="margin:0 0 6px;">What I do</h3>
+          <ul style="margin:0; padding-left:18px; line-height:1.9; color:#cbd5e1;">
+            <li>Product & architecture design for mobile & backend</li>
+            <li>Flutter & React Native apps with clean patterns (BLoC, GetX, MVVM)</li>
+            <li>Laravel/Node APIs, Redis caching, queues, JWT/OAuth</li>
+            <li>Cloud: Firebase (Auth, Firestore, FCM, Crashlytics), AWS (S3, Lambda)</li>
+            <li>Payments: Razorpay, Stripe, PayPal, EGHL</li>
+            <li>CI/CD, testing, monitoring, analytics</li>
+          </ul>
+        </div>
+        <div class="card reveal">
+          <h3 style="margin:0 0 6px;">Currently</h3>
+          <ul style="margin:0; padding-left:18px; line-height:1.9; color:#cbd5e1;">
+            <li>Mobile app development @ Mobius (Chennai / Remote)</li>
+              <li>Focusing on Flutter app performance, crash‑free stability, and clean releases</li>
+              <li>Consulting on CI/CD and Play Store / App Store pipelines</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <div class="container">
+      <div class="card gradient reveal">
+        <h2 class="sec">Experience</h2>
+        <div class="timeline">
+          <div class="tl-item">
+            <div class="tl-head">
+              <div class="tl-role">Mobile App Developer — Mobius Knowledge Services</div>
+              <div class="tl-meta">Jun 2021 – Present · Chennai / Remote</div>
+            </div>
+            <ul style="margin:6px 0 0 18px;color:#cbd5e1;line-height:1.8">
+              <li>Shipped cross‑platform features in Flutter & React Native; improved API response time by 30% with caching & optimizations.</li>
+              <li>Maintained 99.9% crash‑free stability using Firebase Crashlytics and automated release checks.</li>
+              <li>Key: RCA Pass (QR + EGHL), Happy Donors (Razorpay + Maps), Uoojo (delivery ETA improvements).</li>
+            </ul>
+          </div>
+          <div class="tl-item">
+            <div class="tl-head">
+              <div class="tl-role">Mobile Application Developer — Tama Business Solutions</div>
+              <div class="tl-meta">Dec 2018 – Jun 2021 · Chennai</div>
+            </div>
+            <ul style="margin:6px 0 0 18px;color:#cbd5e1;line-height:1.8">
+              <li>Shipped 3+ apps across e‑commerce, booking, payroll; +20% payment success.</li>
+              <li>Projects: Purohit (booking automation −60% manual calls), Tama Family (recharge/e‑com), HariGaji (QR attendance).</li>
+            </ul>
+          </div>
+          <div class="tl-item">
+            <div class="tl-head">
+              <div class="tl-role">Junior Android Developer — Square Dots Solutions</div>
+              <div class="tl-meta">Dec 2017 – Dec 2018 · Chennai</div>
+            </div>
+            <ul style="margin:6px 0 0 18px;color:#cbd5e1;line-height:1.8">
+              <li>Built OBS/FEBS hall‑booking apps with Maps + calendar sync; −15% booking errors.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="container">
+      <div class="card reveal">
+        <h2 class="sec">Skills</h2>
+        <div class="skills">
+          <div style="margin:8px 0 2px; color:var(--muted)">Languages & Frameworks</div>
+          <div>
+            <span class="tag"><span class="dot"></span>Dart (Flutter)</span>
+            <span class="tag"><span class="dot"></span>React Native</span>
+            <span class="tag"><span class="dot"></span>Android (Java/Kotlin)</span>
+            <span class="tag"><span class="dot"></span>iOS (Swift)</span>
+            <span class="tag"><span class="dot"></span>PHP (Laravel)</span>
+            <span class="tag"><span class="dot"></span>Node.js</span>
+          </div>
+          <div style="margin:14px 0 2px; color:var(--muted)">Platforms & Tools</div>
+          <div>
+            <span class="tag"><span class="dot"></span>Firebase (Auth, Firestore, FCM, Crashlytics)</span>
+            <span class="tag"><span class="dot"></span>AWS (S3, Lambda)</span>
+            <span class="tag"><span class="dot"></span>MySQL / SQLite / Realm / Hive</span>
+            <span class="tag"><span class="dot"></span>Git / GitHub / Bitbucket</span>
+            <span class="tag"><span class="dot"></span>REST / GraphQL</span>
+          </div>
+          <div style="margin:14px 0 2px; color:var(--muted)">Practices</div>
+          <div>
+            <span class="tag"><span class="dot"></span>Agile & Scrum</span>
+            <span class="tag"><span class="dot"></span>CI/CD</span>
+            <span class="tag"><span class="dot"></span>App Store / Play Store Deployment</span>
+            <span class="tag"><span class="dot"></span>Performance & Reliability</span>
+            <span class="tag"><span class="dot"></span>UX Collaboration</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="container">
+      <h2 class="sec">Selected Projects</h2>
+      <p class="lead" style="color:var(--muted);margin-top:-8px">A few highlights. More on my <a href="https://github.com/syedaabid1995" target="_blank" rel="noreferrer">GitHub</a>.</p>
+      $1
+        <article class="card project reveal">
+          <a href="https://play.google.com/store/apps/details?id=com.techstar.harigaji&hl=en_IN" target="_blank" rel="noreferrer"><img src="./assets/images/banners/harigaji_banner.webp" alt="HariGaji" loading="lazy"></a>
+          <div>
+            <h3>HariGaji — Earned Wage Access</h3>
+            <div class="meta"><span>Role: Mobile Dev</span> · <span>Stack: Flutter</span></div>
+            <p style="color:#cbd5e1;">Financial app to access salary in advance.</p>
+            <div class="chips">
+              <span class="chip">Flutter</span>
+              <span class="chip">Finance</span>
+            </div>
+          </div>
+        </article>
+        <!-- Project Card Template: duplicate and edit -->
+        <article class="card project reveal">
+          <a href="https://play.google.com/store/apps/details?id=com.hub.pass&hl=en_IN" target="_blank" rel="noreferrer"><img src="./assets/images/banners/rca_banner.webp" alt="RCA Pass" loading="lazy"></a>
+          <div>
+            <h3>RCA Pass — Club Mgmt</h3>
+            <div class="meta"><span>Role: Mobile Dev</span> · <span>Stack: Flutter, Laravel, EGHL</span></div>
+            <p style="color:#cbd5e1;">QR-based entry + EGHL payments; reduced onboarding time by <strong>40%</strong>.</p>
+            <div class="chips">
+              <span class="chip">Flutter</span>
+              <span class="chip">Payments</span>
+              <span class="chip">CI/CD</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card project reveal">
+          <a href="https://apps.apple.com/us/app/product-hound/id1526655979" target="_blank" rel="noreferrer"><img src="./assets/images/banners/product_hound_banner.webp" alt="Product Hound" loading="lazy"></a>
+          <div>
+            <h3>Product Hound — Consumer Safety</h3>
+            <div class="meta"><span>Role: Mobile Dev</span> · <span>Stack: iOS (Swift)</span></div>
+            <p style="color:#cbd5e1;">Recall alerts and product tracking for consumer safety.</p>
+            <div class="chips">
+              <span class="chip">iOS</span>
+              <span class="chip">Notifications</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card project reveal">
+          <a href="https://play.google.com/store/apps/details?id=ngo.happy_donors" target="_blank" rel="noreferrer"><img src="./assets/images/banners/happy_donors_banner.webp" alt="Happy Donors" loading="lazy"></a>
+          <div>
+            <h3>Happy Donors — Blood Donation</h3>
+            <div class="meta"><span>Role: Full‑Stack</span> · <span>Stack: Flutter, React, Razorpay, Maps</span></div>
+            <p style="color:#cbd5e1;">Boosted donor signups by <strong>25%</strong>; complete web + mobile solution.</p>
+            <div class="chips">
+              <span class="chip">Flutter</span>
+              <span class="chip">React</span>
+              <span class="chip">Razorpay</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card project reveal">
+          <a href="https://play.google.com/store/apps/details?id=com.flicky.live" target="_blank" rel="noreferrer"><img src="./assets/images/banners/flicky_banner.webp" alt="Flicky" loading="lazy"></a>
+          <div>
+            <h3>Flicky — Social Video</h3>
+            <div class="meta"><span>Role: Mobile Dev</span> · <span>Stack: Flutter, FFmpeg, Spotify API</span></div>
+            <p style="color:#cbd5e1;">AR filters + video editing; MVP launched in <strong>3 months</strong> for investor pitch.</p>
+            <div class="chips">
+              <span class="chip">FFmpeg</span>
+              <span class="chip">AR</span>
+              <span class="chip">MVP</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card project reveal">
+          <a href="https://play.google.com/store/apps/details?id=com.customerbilltimeapp" target="_blank" rel="noreferrer"><img src="./assets/images/banners/uoojo_banner.webp" alt="Uoojo" loading="lazy"></a>
+          <div>
+            <h3>Uoojo — Food Delivery</h3>
+            <div class="meta"><span>Role: Maps Engineer</span> · <span>Stack: Flutter, Maps</span></div>
+            <p style="color:#cbd5e1;">Improved ETA predictions by <strong>15%</strong> with polylines/polygons.</p>
+            <div class="chips">
+              <span class="chip">Maps</span>
+              <span class="chip">Routing</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card project reveal">
+          <img src="images/purohit.jpg" alt="Purohit – Booking" />
+          <div>
+            <h3>Purohit — Booking</h3>
+            <div class="meta"><span>Role: Android Dev</span> · <span>Stack: Android, Maps, Calendar</span></div>
+            <p style="color:#cbd5e1;">Automated scheduling; reduced manual calls by <strong>60%</strong>.</p>
+            <div class="chips">
+              <span class="chip">Android</span>
+              <span class="chip">Payments</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <div class="container">
+      <div class="card reveal">
+        <h2 class="sec">Services</h2>
+        <div class="grid grid-3">
+          <div class="card">
+            <h3>Mobile Development</h3>
+            <p style="color:#cbd5e1;">Flutter & React Native apps with clean architecture, testing, and CI/CD. Play Store & App Store deployment.</p>
+          </div>
+          <div class="card">
+            <h3>Backend & APIs</h3>
+            <p style="color:#cbd5e1;">Laravel/Node micro‑services, auth, payments, queues, caching, observability, and documentation.</p>
+          </div>
+          <div class="card">
+            <h3>Consulting</h3>
+            <p style="color:#cbd5e1;">Performance audits, crash‑free targets, architecture reviews, and roadmap planning.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section id="testimonials">
+    <div class="container">
+      <div class="grid grid-2">
+        <div class="card reveal">
+          <h2 class="sec">Testimonials</h2>
+          <p class="quote">“Aabid delivered our MVP in record time and set up a maintainable codebase we still rely on.”<br><footer>— Product Lead, Retail Intelligence</footer></p>
+        </div>
+        <div class="card reveal">
+          <h3>More feedback</h3>
+          <p style="color:#cbd5e1;">Add short quotes from managers/clients here. Keep it authentic and specific (problem → solution → result).</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container grid grid-2">
+      <div class="card reveal contact-card">
+        <h2 class="sec">Let’s build something great</h2>
+        <form action="mailto:syedaabid1995@gmail.com" method="post" enctype="text/plain">
+          <input class="input" name="name" placeholder="Your name" required />
+          <input class="input" name="email" type="email" placeholder="Your email" required />
+          <textarea class="input" name="message" rows="5" placeholder="Tell me about your project…" required></textarea>
+          <button class="btn" type="submit">Send Message</button>
+        </form>
+      </div>
+      <div class="card reveal">
+        <h3>Contact</h3>
+        <div class="meta" style="margin:4px 0 10px; display:grid; gap:6px;">
+          <span>📧 <a href="mailto:syedaabid1995@gmail.com">syedaabid1995@gmail.com</a></span>
+          <span>📞 <a href="tel:+918072428026">+91 80724 28026</a></span>
+          <span>🔗 <a href="https://github.com/syedaabid1995" target="_blank" rel="noreferrer">github.com/syedaabid1995</a></span>
+          <span>💼 <a href="https://www.linkedin.com/in/syed-aabid-ahamed-arshad-6902b7169" target="_blank" rel="noreferrer">LinkedIn</a></span>
+        </div>
+        <a class="btn" href="Syed_Aabid_Resume.pdf" download>Download Resume</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Back to Top -->
+  <button id="toTop" class="btn" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">↑</button>
+
+  <footer>
+    © <span id="y"></span> Syed Aabid Ahamed — Built with ♥
+  </footer>
+
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
